@@ -1,0 +1,15 @@
+[package]
+name = "rocket-pastebin"
+version = "0.1.0"
+authors = ["Alfonso Fernando Álvarez <ponchoalv@gmail.com>"]
+
+[dependencies]
+rocket = "0.2.5"
+rocket_codegen = "0.2.5"
+rand = "0.3"
+uuid = { version = "0.4", features = ["v4"] }
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["uuid"]
