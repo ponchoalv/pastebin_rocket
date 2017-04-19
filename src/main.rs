@@ -65,7 +65,6 @@ fn uuid() -> String {
 #[get("/uuid?<user_query>")]
 fn user(user_query: UserQuery) -> String {
     let uuid_str = "c1aa1e3b-9614-4895-9ebd-705255fa5bc2";
-    rocket::logger::init(rocket::LoggingLevel::Debug);
     format!("uuid is equal c1aa1e3b-9614-4895-9ebd-705255fa5bc2 ==> {:?}", (user_query.id == Uuid::from_str(uuid_str).unwrap()))
 }
 
